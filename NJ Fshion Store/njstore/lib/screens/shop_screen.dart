@@ -57,22 +57,22 @@ class ShopScreen extends StatelessWidget {
                 const ProductCard(
                   title: 'Silk Blend Knit',
                   price: '\$189.00',
-                  imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCRmp49_HBuTJnFSAtk0PjSUg__k7A-3gqmJzR_Tv0qLLrYLRMSM8Wa1pv8-FZHSsio27f3Mp4GIY86RwPiOeO9pWWAZDSQz8wtEiNzdoDKRcnsTUQ4y20yuykml9BQ0h8u1xBkTrsFtXMMcAjFoO3IqNjCr6redSUY6vWmGx63t_b-rlQXv50FV-uFEO_uU5lYrj25qvN0M-NKyB83H-SR0XeQuwCubp-6rbknxx_JU2lQgXuVa7L4KmKvpXHr6HyZr7RO1JsCaSs',
+                  /*imageUrl*/ 'assets/images/image_21.jpg',
                 ),
                 const ProductCard(
                   title: 'Overcoat',
                   price: '\$450.00',
-                  imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCCh3BkWpSxkA4MhVXMLY-5tZ6s0cFgpIm02URg4_D9syX2h03YGQSSyuxDj7iAfByfdFCIYhe_SQ7uVgh3_OIAU0PgToJeNJC6U_IkjiDvk4wDJzoNndzS9di43Q0V-0Q0lvghWdz0HPp84uK2J_9GbCevx89e41QMTBjwx6MPy9Lh3VkDZs4cx8zZSJrhWgge3YuIwFnrlyucQlme8M29dlhq5gkCDJ8-tRleLLK_RtLZK99yzQdgsyPiLDb3geSfIdiKKLjuR3E',
+                  /*imageUrl*/ 'assets/images/image_22.jpg',
                 ),
                 const ProductCard(
                   title: 'Pleated Trouser',
                   price: '\$210.00',
-                  imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCsyzOLpeubVOYoRiweoUhRNsapHIjaQun_I11Nn2wfAqRrAksReCjIo3o6N54BTMabe89qAKSTBJ06wcvO2ftGiUj2JYwbFa82MrZkSnVs9rCvTo-SiF7sp-CbO8cpzZS6LyEoUwcHAFnHpjF9m4H5EHwHuiM4z3JlIgZ3PgVNzerjcDL0cjN7eEphJPV8gqXk_HH0x6REyydGRkR5N7ISBAho5aemz6yCwPJGx5PguC_AskepnMBNdMAr427J7-sY90EE-7U23k8',
+                  /*imageUrl*/ 'assets/images/image_23.jpg',
                 ),
                 const ProductCard(
                   title: 'Flora Midi',
                   price: '\$295.00',
-                  imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDpfGZXtpxJBqTu5go9zJhujiV-6KZ4TnR5lUwiOUjfhlQcv4l4aFq8p2D8lDFmFg36J9ci3g7oaHhXKdgqQXGWjwEA7RukHR5h_c_HY3cwOW734icy15j5TA9RiHSpO4UoIL7kP60ffB7yci46B8piMe2iHGkgIPrT5fQKZmUkhh4A7EQw6igSh1vhUWVePhwld1hnqs-OH_BCU62E9VGJa9aUpDr1xbRuXYnHqiiSt5gaJ38YitpuJg14X4pDcIuEl9vXDgZItuk',
+                  /*imageUrl*/ 'assets/images/image_24.jpg',
                 ),
               ],
             ),

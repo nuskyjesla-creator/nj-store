@@ -32,8 +32,8 @@ class ProductDetailsScreen extends StatelessWidget {
                 children: [
                   PageView(
                     children: [
-                      _buildProductImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDXrN9ZSeh2YuhRhq_fCvvEniTiZZ1NDe1cBvzjUdm83KUfrFZGv-wsUuZc8DGvp1nnE_IwP3Ou1KJpXPbPmEEQnlDonWqWV8dZAXY1YkpjyvkKQttUbVVRi3gAdKhKhhuwvukiNbIH4Um6N5LcbGYvaK5Rd6MzcsDveHGqYlTqIIYtY708cbL02tMSUP8DD62WRSCEOwVQrpdDq9t03lSz36OmrlmYZlyszF7lTrxkJaPuKEw9NVrWorSjWmOknAlEHRTyj2EynDE'),
-                      _buildProductImage('https://lh3.googleusercontent.com/aida-public/AB6AXuAWo2l918cH0Jn3vVwscrnZtk39B-Lo87HRnFpn41LeO7S_0RV_qTw0lPcK_NljR-8L_FBzmAAFSkp8ZqnIbG0chAhf7e68Tg35VUz7-Qp7HP_ez-YJ5VJjcx2goJP59YE-LFwpZV3FeSZ6RVIlZoSR-TiDkh_CUsbZTPCxWBE_AZ-Ft1do0KhxQvjW0CIo4Z4OoZVCONf9dK6zrndEezZTSoyHrMa11ZWQaW8R_l46vdRjIPSaTJ9y849UrnLeU_eoDzZIYN-KtGA'),
+                      _buildProductImage('assets/images/image_18.jpg'),
+                      _buildProductImage('assets/images/image_19.jpg'),
                     ],
                   ),
                   Positioned(
@@ -194,7 +194,7 @@ class ProductDetailsScreen extends StatelessWidget {
   }
 
   Widget _buildProductImage(String url) {
-    return Image.network(url, fit: BoxFit.cover);
+    return Image.asset(url, fit: BoxFit.cover);
   }
 
   Widget _buildColorOption(Color color, {bool isSelected = false}) {

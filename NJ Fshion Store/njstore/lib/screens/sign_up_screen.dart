@@ -92,8 +92,8 @@ class SignUpScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.network(
-                          'https://lh3.googleusercontent.com/aida-public/AB6AXuA2q52g1hy_FVVvK3MXxDKnoKvN_sjTOtXgvOtuiJsdD2vskTIlh6U4Ditu-FU0BLetJKtinPaZ1bs0qa-kDngX6b0mfVHDwiWHVfLNNY0eMiTeOdRzPc7II59jU1cClpeY6P3JecC3Sf45bPW9D09RbI4s8VNZlKj_N2tDn9OYyAIfjZKQGAko47nsa5X-3a66klUDcFCbR_-V0LBQgC_RqPDmAX8FB9P_S2jk65aMgGRSZnn9D26LerLNHcB77_f7NpsgSkh_xoQ',
+                        Image.asset(
+                          'assets/images/image_26.jpg',
                           width: 20,
                           height: 20,
                         ),
@@ -150,8 +150,8 @@ class SignUpScreen extends StatelessWidget {
             // Boutique Image
             ClipRRect(
               borderRadius: BorderRadius.circular(24),
-              child: Image.network(
-                'https://lh3.googleusercontent.com/aida-public/AB6AXuBVqhqTaxAOWocLnMGsKBvViFmii5seM1ILzycAneXKjA0a6Z-OiR215_BGdyW_8YsB1YVwW2r_HInp9m-9oQuMoBAMexZpM06bgw-YX3sx9heQHXYM7NPeYLbU392PdEh331bWbt5hK7Vj-rNWJCRFXIN-VHvMHT5s0YKv0SuXv4Wq1gTrSZ4qE847ljeklSHpWarU_SYprdcwe7WhdGSNPaWJ7iHveuWk3gNLG1WXVyx8QfKqBL_WBlCSfFMBKXb0NTjYfBEtHoc',
+              child: Image.asset(
+                'assets/images/image_27.jpg',
                 height: 200,
                 width: double.infinity,
                 fit: BoxFit.cover,

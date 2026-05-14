@@ -134,8 +134,8 @@ class SplashScreen extends StatelessWidget {
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(24),
-                              child: Image.network(
-                                'https://lh3.googleusercontent.com/aida-public/AB6AXuB5SuxItZd2D9oT1yYL0JucOmN6O3kswaj4fBUCmvC31K5qEwicPN8ZOJ_Ly4fu1SV_ys9iZjK4j41fep-0eaI75XKHIjCfYgLXKYDxuTUB64Z6VLQxaw8NYmvnM5ETQrkIfDauYbDG910aBKxoowM7zBoMPvURwtvTYfpohN7YBhch7IBSdxlNj5zerIYzKWnqdFMiZlH0VZyUHWS5Mb5GHtjEX9QcwhdABOpgGxbmXe9LlEhUmop8zWFHZdEdQg6IIqYMluYDTUU',
+                              child: Image.asset(
+                                'assets/images/image_28.jpg',
                                 fit: BoxFit.cover,
                               ),
                             ),

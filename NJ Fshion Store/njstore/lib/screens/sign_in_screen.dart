@@ -234,8 +234,8 @@ class SignInScreen extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image.network(
-                                'https://lh3.googleusercontent.com/aida-public/AB6AXuDH1QCiYXsF-B6pxV7zddUGcWzs9DPX6Ib4sYg9mRtQOYaeYSMzjkw4VjN0hlfeoftJTHqbib6Jj3o_sfFZfUZH0nJpbx5DrXhNGo6XVmb9TZ5WtZQKaV8bsa6Y72sahW9anozSVv-vyHjcdF1WEUllm89Q-b-3EqLZQcoQZJ5soKppojl-lt99bmMSohE14nqnAVRJSJXS6n_Wkf0yl_TbB-MiJvw9QQgHz1CuJ7Hi07xaqFM7bg9lwHADWf6pVLAsgieVMnZAyGo',
+                              Image.asset(
+                                'assets/images/image_25.jpg',
                                 width: 20,
                                 height: 20,
                               ),

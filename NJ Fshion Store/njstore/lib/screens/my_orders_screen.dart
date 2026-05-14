@@ -28,7 +28,7 @@ class MyOrdersScreen extends StatelessWidget {
               'Delivered',
               'Oct 12, 2023',
               '\$245.00',
-              ['https://lh3.googleusercontent.com/aida-public/AB6AXuBQkqYrtfsHdOZ0fZj6V31pN6Pgqmur5UvTC1PqxecMSPraZxjQuNff5FPbdjpKvvS9mN18qtzuHuexAKNmWBwFaDD6YT2AlGSWYhLyNpnC_Uuq1fbyL8IMS3tGW9Od6oQPBvhER0jm9forLInglKs7A1BREn2QvBFkBNhrv_6Bb5qEyGkU7CpnOAsF5qq9qZGj7iKyMwpl1rQIhdO2NkCnBPuV1FUkDyrQViqOb817gN4Ci3jOq8doqn5y0afB1QM-RtogtpEbufs', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAaViNpjUfRssumSfgqyO6-ku_DQiAvo3O5nSCt-uxwreO8waLCmXIUNkW0v9D_-86q1HZtSjNsHxeOOgScF5UnsSHN2kd7Oq6_1qcKFxkPMoluW3zfvN5Na2AKQ35xuJbNWp-YxDq35z6DW2OCAgRFGvGLPqAMmh7r5ByXzlDeJAHzE7SRRwEsirp5CaIKzaZTbgFPZoBCIpXsJDndTUvwqaSv8cPH1EPfbbjDPxvxJIfSDmgWV2Z1D0PqU5LJpaRdm_40hgcj-18'],
+              ['assets/images/image_14.jpg', 'assets/images/image_15.jpg'],
             ),
             _buildOrderCard(
               context,
@@ -36,7 +36,7 @@ class MyOrdersScreen extends StatelessWidget {
               'Shipped',
               'Oct 08, 2023',
               '\$1,120.00',
-              ['https://lh3.googleusercontent.com/aida-public/AB6AXuDScanuTcN9O2d01CA8X1H4_uqmTWSeSax2vtrnVJU5PZw3-zydhq1wn8WvntgV1GrNMERBFfzZALoYryNv6kFZrzDmduiMLjMw4JvWJhbdQhlX2DDYYj4bWpT5iiD4L2GvMhgaRP69Z4t_TJeoRCSx-00CTjb8wDkpAxOb1qK1VG7wPu12edY8VsA3k1BAt4vN5NuqM_LFP6isToIt3lXdC8xCB-0XX70S1QQOrWJT8iZ6SkN7Zly1rhjUQUcjKpdH4x1GBkH7ng4'],
+              ['assets/images/image_16.jpg'],
               isNew: true,
             ),
             _buildOrderCard(
@@ -45,7 +45,7 @@ class MyOrdersScreen extends StatelessWidget {
               'Delivered',
               'Sep 24, 2023',
               '\$89.00',
-              ['https://lh3.googleusercontent.com/aida-public/AB6AXuBc7m0o-7lfcoTB_CrUUnfQozvL8t6B4aM0eFZ0S_harX_nzK_DVNoP9-9JClUIuBrdIh30TKmZAotukl-q6Rf93EMibjqLR2AxbRkIqy11Ev5Zo5IMeL3_QaAx1Yn0QeA-5Ako4dq4IqfNb9CKM35vBcEPbhPRUkB1B7OIx5gk0HOIzNWXLftnYNpYWcurYm4ZDuwU_L9GQD3dbVhcJ4D42V8wGVsz6hNGdI6Oo98p92p5FfseRMao_Zkr4vJLhilMN1-awMH8mLw'],
+              ['assets/images/image_17.jpg'],
             ),
           ],
         ),
@@ -115,7 +115,7 @@ class MyOrdersScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.white, width: 2),
-                          image: DecorationImage(image: NetworkImage(images[index]), fit: BoxFit.cover),
+                          image: DecorationImage(image: AssetImage(images[index]), fit: BoxFit.cover),
                         ),
                       );
                     },

@@ -27,7 +27,7 @@ class ProfileScreen extends StatelessWidget {
                         shape: BoxShape.circle,
                         border: Border.all(color: AppColors.primaryContainer, width: 4),
                         image: const DecorationImage(
-                          image: NetworkImage('https://lh3.googleusercontent.com/aida-public/AB6AXuCVuxL18Hx9ARMMi6d9Dp225J8G8OiGaWHpcBy5sQ0I3_hgMQrmAXbTZCgOJw6WxKySU2AknVmdqRp4D-3MBDieEDJ2FyrvXVhifkMoXIoqUDvE0szal2zmVPxhDubN5EbB6gn1A5qz0Vlm1zo_8Z8xvV3ArcFzCjnk9ce6fCLNDmQL3ZxsLaN6iiwSONSB4UcUAdkigv8ajUODPUfg4iq7qR_3cIAhe-IEoEYjyzZvZwEKjpbPw1qhyQPliykJ3JVWZ93Azv8tDVo'),
+                          image: AssetImage('assets/images/image_20.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),

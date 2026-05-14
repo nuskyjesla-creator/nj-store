@@ -27,19 +27,19 @@ class CartScreen extends StatelessWidget {
               'Essential Linen Shirt',
               '\$89.00',
               'Sand Beige • Size M',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuAmGayP-6aTaWSakwwN2KBwJb8OZEy4TcZ5bHaokSit1uuNsM9P5Qv5Q_Z8RaBb5MPNrKfFQ5SveqR9_9NWGHv730feCsIAttdsnUrG5E4HbdkJv1ZjhOz3bm0EXFdcA62imKDZJKgiDvX5bhdHDS2F-oHuwM2iwtAqDNgOv-Gc96uqmK7IjKrjjPWeJhxio0aX7NuO7CReb1F2CsrOR5ChzL8VS3K4yRz1JfZ4xovFYnIfrnVSyozsxC5WaY3V-LNG4THzCa9glL8',
+              'assets/images/image_1.jpg',
             ),
             _buildCartItem(
               'Petal Silk Scarf',
               '\$45.00',
               'Rosewood • One Size',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuDumpbpjc1RWAdhasm0CiwPZQ24FbFJrmv38XjYojubBDqkfCneMBWSBedhX3Vy8H4XnEuJSVkJu-PXQBIQ0X5Yx40np81hZPCG_apP_xG4-YLbH2gT-PvJ2cTLAiU-zrkvnYatSJTNC8cTnCiORjq8wiHAeVNMfJ9n36OB3Eb3_Ww4g3WZABLh_kbLSDPzAjLT4LL54dNmAVDVrx3GDxUOhZlNgMFcQe4Uw0HRqbzgLDHv7Hbs_gNOxY7yQnOhRq4sWi3sI-VX5sA',
+              'assets/images/image_2.jpg',
             ),
             _buildCartItem(
               'Sage Wide Trousers',
               '\$120.00',
               'Sage Green • Size S',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuD8BJAlGgneZAHwSG8pP7yii2emNeHw02ebDoDa_T-e62Kfq69yehCz2H50-b2ivgWJr61qc6cYOwUMF8y4TEQl011yr410IIJMPetj-FFgKBjz6rSCROh9oli7oiYjTZab8dHPVEscoh1MLfobkDNTM4NShxkVvLNFeCzg-F0VgGuZSTiLQDCD2w7HDmkI4fhs5UZzcn2VDefPKkyhb_soA1S5lHwMcnKFx2wEw9wj6kccUt5DWt19zRsbTKJ_W5Simw5hABx_zlA',
+              'assets/images/image_3.jpg',
             ),
             
             const SizedBox(height: 32),
@@ -115,7 +115,7 @@ class CartScreen extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(16),
-            child: Image.network(imageUrl, width: 80, height: 100, fit: BoxFit.cover),
+            child: Image.asset(imageUrl, width: 80, height: 100, fit: BoxFit.cover),
           ),
           const SizedBox(width: 16),
           Expanded(
