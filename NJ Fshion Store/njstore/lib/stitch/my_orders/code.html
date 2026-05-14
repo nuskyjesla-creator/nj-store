@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#cdead1",
+                    "surface-bright": "#fcf9f8",
+                    "on-surface": "#1b1c1c",
+                    "background": "#fcf9f8",
+                    "outline-variant": "#c2c8c0",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#344c3a",
+                    "on-secondary-fixed-variant": "#5b403f",
+                    "on-secondary-container": "#7a5b5a",
+                    "error": "#ba1a1a",
+                    "tertiary": "#5e5f5b",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#082011",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-container": "#47604d",
+                    "inverse-primary": "#b2cdb6",
+                    "tertiary-fixed-dim": "#c7c7c2",
+                    "surface-container": "#f0eded",
+                    "on-secondary-fixed": "#2b1515",
+                    "surface-tint": "#4b6451",
+                    "secondary-container": "#ffd6d4",
+                    "outline": "#737972",
+                    "on-tertiary-fixed-variant": "#464744",
+                    "secondary": "#755756",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffdad8",
+                    "surface-variant": "#e4e2e1",
+                    "primary-container": "#bdd9c1",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#d3d2cd",
+                    "surface-dim": "#dcd9d9",
+                    "surface": "#fcf9f8",
+                    "secondary-fixed-dim": "#e4bdbb",
+                    "error-container": "#ffdad6",
+                    "primary": "#4b6451",
+                    "on-background": "#1b1c1c",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#424843",
+                    "inverse-on-surface": "#f3f0f0",
+                    "surface-container-high": "#eae7e7",
+                    "tertiary-fixed": "#e3e3de",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "primary-fixed-dim": "#b2cdb6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "lg": "48px",
+                    "xs": "4px",
+                    "margin": "24px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "gutter": "20px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["18px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body {
+            background-color: #fcf9f8;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-stone-50/80 backdrop-blur-lg border-b border-emerald-100/20">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<button class="text-emerald-800 hover:bg-emerald-50/50 transition-colors p-2 rounded-full Active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-emerald-900 font-headline-md">NJ STORE</h1>
+<button class="text-emerald-800 hover:bg-emerald-50/50 transition-colors p-2 rounded-full Active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-3xl mx-auto min-h-screen">
+<!-- Header Section -->
+<div class="mb-md">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">My Orders</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage and track your recent fashion finds.</p>
+</div>
+<!-- Filter Chips (Custom Component) -->
+<div class="flex gap-sm mb-lg overflow-x-auto pb-xs">
+<button class="bg-primary text-on-primary px-md py-xs rounded-full font-label-md text-label-md whitespace-nowrap">All Orders</button>
+<button class="bg-surface-container-low text-on-surface-variant px-md py-xs rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-primary-container transition-colors">Shipped</button>
+<button class="bg-surface-container-low text-on-surface-variant px-md py-xs rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-primary-container transition-colors">Delivered</button>
+<button class="bg-surface-container-low text-on-surface-variant px-md py-xs rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-primary-container transition-colors">Returns</button>
+</div>
+<!-- Orders List -->
+<div class="space-y-md">
+<!-- Order Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-emerald-100/30 transition-all hover:shadow-[0_4px_20px_rgba(189,217,193,0.15)]">
+<div class="flex justify-between items-start mb-md">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-xs">Order #NJ-8821</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Delivered</h3>
+</div>
+<div class="text-right">
+<p class="font-headline-sm text-headline-sm text-primary">$245.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Oct 12, 2023</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="flex -space-x-4 overflow-hidden">
+<img alt="Product" class="inline-block h-12 w-12 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Close-up of a high-end designer wool coat in soft cream color, minimalist fashion aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQkqYrtfsHdOZ0fZj6V31pN6Pgqmur5UvTC1PqxecMSPraZxjQuNff5FPbdjpKvvS9mN18qtzuHuexAKNmWBwFaDD6YT2AlGSWYhLyNpnC_Uuq1fbyL8IMS3tGW9Od6oQPBvhER0jm9forLInglKs7A1BREn2QvBFkBNhrv_6Bb5qEyGkU7CpnOAsF5qq9qZGj7iKyMwpl1rQIhdO2NkCnBPuV1FUkDyrQViqOb817gN4Ci3jOq8doqn5y0afB1QM-RtogtpEbufs"/>
+<img alt="Product" class="inline-block h-12 w-12 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Pair of minimalist white leather sneakers on a clean pastel background, high-end fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaViNpjUfRssumSfgqyO6-ku_DQiAvo3O5nSCt-uxwreO8waLCmXIUNkW0v9D_-86q1HZtSjNsHxeOOgScF5UnsSHN2kd7Oq6_1qcKFxkPMoluW3zfvN5Na2AKQ35xuJbNWp-YxDq35z6DW2OCAgRFGvGLPqAMmh7r5ByXzlDeJAHzE7SRRwEsirp5CaIKzaZTbgFPZoBCIpXsJDndTUvwqaSv8cPH1EPfbbjDPxvxJIfSDmgWV2Z1D0PqU5LJpaRdm_40hgcj-18"/>
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md ring-2 ring-surface-container-lowest">+1</div>
+</div>
+<div class="ml-auto">
+<button class="text-primary font-label-md text-label-md flex items-center gap-xs hover:gap-sm transition-all">
+                            VIEW DETAILS
+                            <span class="material-symbols-outlined text-[16px]" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Order Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-emerald-100/30 transition-all hover:shadow-[0_4px_20px_rgba(189,217,193,0.15)]">
+<div class="flex justify-between items-start mb-md">
+<div>
+<div class="flex items-center gap-sm mb-xs">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Order #NJ-8754</p>
+<span class="inline-flex items-center rounded-full bg-secondary-container px-2 py-0.5 text-[10px] font-medium text-secondary">NEW</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Shipped</h3>
+</div>
+<div class="text-right">
+<p class="font-headline-sm text-headline-sm text-primary">$1,120.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Oct 08, 2023</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="flex -space-x-4 overflow-hidden">
+<img alt="Product" class="inline-block h-12 w-12 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="High-quality luxury leather handbag in soft tan color, editorial fashion style lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDScanuTcN9O2d01CA8X1H4_uqmTWSeSax2vtrnVJU5PZw3-zydhq1wn8WvntgV1GrNMERBFfzZALoYryNv6kFZrzDmduiMLjMw4JvWJhbdQhlX2DDYYj4bWpT5iiD4L2GvMhgaRP69Z4t_TJeoRCSx-00CTjb8wDkpAxOb1qK1VG7wPu12edY8VsA3k1BAt4vN5NuqM_LFP6isToIt3lXdC8xCB-0XX70S1QQOrWJT8iZ6SkN7Zly1rhjUQUcjKpdH4x1GBkH7ng4"/>
+</div>
+<div class="ml-auto">
+<button class="bg-surface-container-low text-on-surface px-md py-sm rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors">
+                            TRACK ORDER
+                        </button>
+</div>
+</div>
+</div>
+<!-- Order Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-md border border-emerald-100/30 opacity-80 transition-all hover:opacity-100">
+<div class="flex justify-between items-start mb-md">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-xs">Order #NJ-8690</p>
+<h3 class="font-headline-sm text-headline-sm text-stone-500">Delivered</h3>
+</div>
+<div class="text-right">
+<p class="font-headline-sm text-headline-sm text-primary">$89.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Sep 24, 2023</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="flex -space-x-4 overflow-hidden">
+<img alt="Product" class="inline-block h-12 w-12 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Minimalist silk scarf with abstract patterns in neutral tones, high-end boutique aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc7m0o-7lfcoTB_CrUUnfQozvL8t6B4aM0eFZ0S_harX_nzK_DVNoP9-9JClUIuBrdIh30TKmZAotukl-q6Rf93EMibjqLR2AxbRkIqy11Ev5Zo5IMeL3_QaAx1Yn0QeA-5Ako4dq4IqfNb9CKM35vBcEPbhPRUkB1B7OIx5gk0HOIzNWXLftnYNpYWcurYm4ZDuwU_L9GQD3dbVhcJ4D42V8wGVsz6hNGdI6Oo98p92p5FfseRMao_Zkr4vJLhilMN1-awMH8mLw"/>
+</div>
+<div class="ml-auto flex gap-sm">
+<button class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors">
+                            INVOICE
+                        </button>
+<div class="w-px h-4 bg-outline-variant self-center"></div>
+<button class="text-primary font-label-md text-label-md hover:underline decoration-primary-container underline-offset-4 transition-all">
+                            BUY AGAIN
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Hint -->
+<div class="mt-xl text-center">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-50 text-emerald-800 mb-md">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Looking for an older order?</p>
+<button class="mt-sm text-primary font-label-md text-label-md border-b border-primary/30 pb-1">Contact Support</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-stone-50/90 backdrop-blur-xl border-t border-emerald-100/30 rounded-t-[2.5rem] shadow-[0_-4px_20px_rgba(189,217,193,0.1)]">
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 text-emerald-900 rounded-full px-5 py-2 Active:transform scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person" data-weight="fill" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

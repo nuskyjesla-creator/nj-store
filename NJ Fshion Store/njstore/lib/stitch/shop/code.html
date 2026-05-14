@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#cdead1",
+                    "surface-bright": "#fcf9f8",
+                    "on-surface": "#1b1c1c",
+                    "background": "#fcf9f8",
+                    "outline-variant": "#c2c8c0",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#344c3a",
+                    "on-secondary-fixed-variant": "#5b403f",
+                    "on-secondary-container": "#7a5b5a",
+                    "error": "#ba1a1a",
+                    "tertiary": "#5e5f5b",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#082011",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-container": "#47604d",
+                    "inverse-primary": "#b2cdb6",
+                    "tertiary-fixed-dim": "#c7c7c2",
+                    "surface-container": "#f0eded",
+                    "on-secondary-fixed": "#2b1515",
+                    "surface-tint": "#4b6451",
+                    "secondary-container": "#ffd6d4",
+                    "outline": "#737972",
+                    "on-tertiary-fixed-variant": "#464744",
+                    "secondary": "#755756",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffdad8",
+                    "surface-variant": "#e4e2e1",
+                    "primary-container": "#bdd9c1",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#d3d2cd",
+                    "surface-dim": "#dcd9d9",
+                    "surface": "#fcf9f8",
+                    "secondary-fixed-dim": "#e4bdbb",
+                    "error-container": "#ffdad6",
+                    "primary": "#4b6451",
+                    "on-background": "#1b1c1c",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#424843",
+                    "inverse-on-surface": "#f3f0f0",
+                    "surface-container-high": "#eae7e7",
+                    "tertiary-fixed": "#e3e3de",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "primary-fixed-dim": "#b2cdb6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "lg": "48px",
+                    "xs": "4px",
+                    "margin": "24px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "gutter": "20px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["18px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-stone-50/80 backdrop-blur-lg border-b border-emerald-100/20">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<button class="p-2 text-emerald-800 hover:bg-emerald-50/50 transition-colors rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-emerald-900 font-headline-md">NJ STORE</h1>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex p-2 text-emerald-800 hover:bg-emerald-50/50 transition-colors rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="p-2 text-emerald-800 hover:bg-emerald-50/50 transition-colors rounded-full active:scale-95 duration-150 relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-secondary rounded-full"></span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-margin max-w-7xl mx-auto">
+<!-- Header Section -->
+<section class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">New Collection</h2>
+<p class="font-body-lg text-body-lg text-outline">Curated minimalist essentials for the modern wardrobe.</p>
+</section>
+<!-- Search & Filter Controls -->
+<section class="mb-lg space-y-md">
+<div class="flex gap-sm overflow-x-auto hide-scrollbar pb-xs">
+<button class="flex items-center gap-2 px-md py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+                    Filters
+                </button>
+<button class="px-md py-2 bg-surface-container-low text-on-surface-variant border border-outline-variant/30 rounded-full font-label-md text-label-md hover:bg-primary-container/20 transition-colors">
+                    All Clothing
+                </button>
+<button class="px-md py-2 bg-surface-container-low text-on-surface-variant border border-outline-variant/30 rounded-full font-label-md text-label-md hover:bg-primary-container/20 transition-colors">
+                    Dresses
+                </button>
+<button class="px-md py-2 bg-surface-container-low text-on-surface-variant border border-outline-variant/30 rounded-full font-label-md text-label-md hover:bg-primary-container/20 transition-colors">
+                    Outerwear
+                </button>
+<button class="px-md py-2 bg-surface-container-low text-on-surface-variant border border-outline-variant/30 rounded-full font-label-md text-label-md hover:bg-primary-container/20 transition-colors whitespace-nowrap">
+                    Accessories
+                </button>
+</div>
+<!-- Detailed Filters (Bento Layout Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Color Filter -->
+<div class="bg-surface-container-lowest p-md rounded-lg border border-outline-variant/20">
+<span class="font-label-md text-label-md text-outline uppercase block mb-sm">Color</span>
+<div class="flex flex-wrap gap-sm">
+<button class="w-8 h-8 rounded-full bg-stone-100 ring-2 ring-primary ring-offset-2"></button>
+<button class="w-8 h-8 rounded-full bg-stone-900"></button>
+<button class="w-8 h-8 rounded-full bg-emerald-100"></button>
+<button class="w-8 h-8 rounded-full bg-secondary-fixed"></button>
+<button class="w-8 h-8 rounded-full bg-tertiary-container"></button>
+</div>
+</div>
+<!-- Size Filter -->
+<div class="bg-surface-container-lowest p-md rounded-lg border border-outline-variant/20">
+<span class="font-label-md text-label-md text-outline uppercase block mb-sm">Size</span>
+<div class="flex flex-wrap gap-xs">
+<button class="px-4 py-1.5 border border-outline-variant/50 rounded-full font-label-md text-label-md hover:border-primary transition-colors">XS</button>
+<button class="px-4 py-1.5 bg-primary text-on-primary rounded-full font-label-md text-label-md">S</button>
+<button class="px-4 py-1.5 border border-outline-variant/50 rounded-full font-label-md text-label-md hover:border-primary transition-colors">M</button>
+<button class="px-4 py-1.5 border border-outline-variant/50 rounded-full font-label-md text-label-md hover:border-primary transition-colors">L</button>
+<button class="px-4 py-1.5 border border-outline-variant/50 rounded-full font-label-md text-label-md hover:border-primary transition-colors">XL</button>
+</div>
+</div>
+<!-- Price Range -->
+<div class="bg-surface-container-lowest p-md rounded-lg border border-outline-variant/20">
+<span class="font-label-md text-label-md text-outline uppercase block mb-sm">Price Range</span>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface">
+<span>$0</span>
+<div class="flex-1 mx-4 h-[2px] bg-outline-variant relative">
+<div class="absolute inset-y-0 left-0 w-2/3 bg-primary"></div>
+<div class="absolute -top-1.5 left-2/3 w-4 h-4 bg-primary rounded-full shadow-md"></div>
+</div>
+<span>$500+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-xl">
+<!-- Product 1 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg bg-primary-container/20 overflow-hidden relative mb-md">
+<img alt="Elegant beige knit sweater" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="high-fashion portrait of a woman wearing a cream-colored minimalist knit sweater against a soft studio backdrop with gentle shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRmp49_HBuTJnFSAtk0PjSUg__k7A-3gqmJzR_Tv0qLLrYLRMSM8Wa1pv8-FZHSsio27f3Mp4GIY86RwPiOeO9pWWAZDSQz8wtEiNzdoDKRcnsTUQ4y20yuykml9BQ0h8u1xBkTrsFtXMMcAjFoO3IqNjCr6redSUY6vWmGx63t_b-rlQXv50FV-uFEO_uU5lYrj25qvN0M-NKyB83H-SR0XeQuwCubp-6rbknxx_JU2lQgXuVa7L4KmKvpXHr6HyZr7RO1JsCaSs"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Silk Blend Knit</h3>
+<span class="font-label-md text-label-md text-primary">$189</span>
+</div>
+<p class="font-label-md text-label-md text-outline uppercase">Beige Melange</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg bg-secondary-container/20 overflow-hidden relative mb-md">
+<img alt="Classic wool coat in charcoal" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="minimalist fashion shot of a charcoal grey structured wool coat hanging against a clean white wall with sharp architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCh3BkWpSxkA4MhVXMLY-5tZ6s0cFgpIm02URg4_D9syX2h03YGQSSyuxDj7iAfByfdFCIYhe_SQ7uVgh3_OIAU0PgToJeNJC6U_IkjiDvk4wDJzoNndzS9di43Q0V-0Q0lvghWdz0HPp84uK2J_9GbCevx89e41QMTBjwx6MPy9Lh3VkDZs4cx8zZSJrhWgge3YuIwFnrlyucQlme8M29dlhq5gkCDJ8-tRleLLK_RtLZK99yzQdgsyPiLDb3geSfIdiKKLjuR3E"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Overcoat</h3>
+<span class="font-label-md text-label-md text-primary">$450</span>
+</div>
+<p class="font-label-md text-label-md text-outline uppercase">Charcoal</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg bg-tertiary-container/20 overflow-hidden relative mb-md">
+<img alt="Modern white tailoring trousers" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="clean layout of ivory tailored trousers with crisp pleats on a textured neutral surface, soft natural daylight from a side window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsyzOLpeubVOYoRiweoUhRNsapHIjaQun_I11Nn2wfAqRrAksReCjIo3o6N54BTMabe89qAKSTBJ06wcvO2ftGiUj2JYwbFa82MrZkSnVs9rCvTo-SiF7sp-CbO8cpzZS6LyEoUwcHAFnHpjF9m4H5EHwHuiM4z3JlIgZ3PgVNzerjcDL0cjN7eEphJPV8gqXk_HH0x6REyydGRkR5N7ISBAho5aemz6yCwPJGx5PguC_AskepnMBNdMAr427J7-sY90EE-7U23k8"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pleated Trouser</h3>
+<span class="font-label-md text-label-md text-primary">$210</span>
+</div>
+<p class="font-label-md text-label-md text-outline uppercase">Ivory</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg bg-primary-container/20 overflow-hidden relative mb-md">
+<img alt="Floral print midi dress" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="editorial shot of a flowing lightweight summer dress with subtle floral print, draped elegantly in a bright sunlit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpfGZXtpxJBqTu5go9zJhujiV-6KZ4TnR5lUwiOUjfhlQcv4l4aFq8p2D8lDFmFg36J9ci3g7oaHhXKdgqQXGWjwEA7RukHR5h_c_HY3cwOW734icy15j5TA9RiHSpO4UoIL7kP60ffB7yci46B8piMe2iHGkgIPrT5fQKZmUkhh4A7EQw6igSh1vhUWVePhwld1hnqs-OH_BCU62E9VGJa9aUpDr1xbRuXYnHqiiSt5gaJ38YitpuJg14X4pDcIuEl9vXDgZItuk"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Flora Midi</h3>
+<span class="font-label-md text-label-md text-primary">$295</span>
+</div>
+<p class="font-label-md text-label-md text-outline uppercase">Sage Blossom</p>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg bg-secondary-container/20 overflow-hidden relative mb-md">
+<img alt="Leather shoulder bag" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="luxury product photography of a tan leather handbag with gold hardware, placed on a marble plinth with soft directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqubFbfKAb55gR0g2dUHLuAzx4_KDPlBKyol00R4S0sC9OlvoRrBZfnyoj_ho_Ur6VDGmQ-X60Kww4_SfTr6y51D5UM_5fb99BQphJ0rwHHaAIQ8SQAL244d3a7Q--UjLS-mDwBXhLxsWJhVwdMTI2zc3qwvCCQURNED4GoIv-M48LeXiDSY1ZwZ7TL-ERF-onf09LD7jJsL4Q5mrSXY3ocJaUNIVi2ZwadIIAwGVgLFHfXi4Qvxk95QMgjGGOc2VOZcvS7Gr4CPU"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Luna Bag</h3>
+<span class="font-label-md text-label-md text-primary">$340</span>
+</div>
+<p class="font-label-md text-label-md text-outline uppercase">Tan Leather</p>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-lg bg-surface-container overflow-hidden relative mb-md">
+<img alt="Essential white shirt" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="crisp high-quality organic cotton white button-down shirt, meticulously ironed and displayed on a wooden hanger against a neutral wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB49rR0Z7L9JrLCmJPAmOTrX6KxYkSI9Y2-q0ctNSoJ6LhwEMzFpkp3FbI2XSkMzUyZ_IThsQQa9ywehXWLy-iWE5CL2c_EnGFMMyD980fzUV7pCQYRU0OZdufIaf7oO8zctHw8LJzJP8hGB4DjoOpBuIlYCzlh9OogCxDJCZK9pO-QJgsF10qLNzyzs4wJ0_QNrX7VbnWrPas-mOSTjmQXqtpShtpk4n3incqsTmSTS8t11QKFGyYsPAaeNfhl5VUpSKrU4-kQskg"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Oxford Shirt</h3>
+<span class="font-label-md text-label-md text-primary">$155</span>
+</div>
+<p class="font-label-md text-label-md text-outline uppercase">Classic White</p>
+</div>
+</div>
+</section>
+<!-- Pagination / Load More -->
+<div class="mt-xl flex justify-center">
+<button class="px-xl py-4 bg-surface-container-lowest border border-outline-variant/30 rounded-full font-headline-sm text-headline-sm text-primary hover:bg-primary-container/20 transition-all active:scale-95">
+                Load More Items
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-stone-50/90 backdrop-blur-xl border-t border-emerald-100/30 rounded-t-[2.5rem] shadow-[0_-4px_20px_rgba(189,217,193,0.1)]">
+<div class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe">
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 text-emerald-900 rounded-full px-5 py-2 transform scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined">shopping_basket</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

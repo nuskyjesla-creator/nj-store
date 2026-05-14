@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#cdead1",
+                    "surface-bright": "#fcf9f8",
+                    "on-surface": "#1b1c1c",
+                    "background": "#fcf9f8",
+                    "outline-variant": "#c2c8c0",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#344c3a",
+                    "on-secondary-fixed-variant": "#5b403f",
+                    "on-secondary-container": "#7a5b5a",
+                    "error": "#ba1a1a",
+                    "tertiary": "#5e5f5b",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#082011",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-container": "#47604d",
+                    "inverse-primary": "#b2cdb6",
+                    "tertiary-fixed-dim": "#c7c7c2",
+                    "surface-container": "#f0eded",
+                    "on-secondary-fixed": "#2b1515",
+                    "surface-tint": "#4b6451",
+                    "secondary-container": "#ffd6d4",
+                    "outline": "#737972",
+                    "on-tertiary-fixed-variant": "#464744",
+                    "secondary": "#755756",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffdad8",
+                    "surface-variant": "#e4e2e1",
+                    "primary-container": "#bdd9c1",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#d3d2cd",
+                    "surface-dim": "#dcd9d9",
+                    "surface": "#fcf9f8",
+                    "secondary-fixed-dim": "#e4bdbb",
+                    "error-container": "#ffdad6",
+                    "primary": "#4b6451",
+                    "on-tertiary-container": "#595a57",
+                    "on-background": "#1b1c1c",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#424843",
+                    "inverse-on-surface": "#f3f0f0",
+                    "surface-container-high": "#eae7e7",
+                    "tertiary-fixed": "#e3e3de",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "primary-fixed-dim": "#b2cdb6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "lg": "48px",
+                    "xs": "4px",
+                    "margin": "24px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "gutter": "20px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["18px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f8;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-lg border-b border-emerald-100/20 dark:border-emerald-900/20">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<button class="text-emerald-800 dark:text-emerald-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 transition-colors p-2 rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-emerald-900 dark:text-emerald-100 font-['Plus_Jakarta_Sans']">NJ STORE</h1>
+<button class="text-emerald-800 dark:text-emerald-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 transition-colors p-2 rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-margin max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg lg:gap-xl items-start">
+<!-- Left Side: Product Imagery (Bento Inspired) -->
+<div class="md:col-span-7 grid grid-cols-2 gap-md h-full">
+<div class="col-span-2 aspect-[4/5] rounded-lg overflow-hidden bg-primary-container/30">
+<img class="w-full h-full object-cover mix-blend-multiply" data-alt="Close-up studio shot of a luxurious minimalist linen dress in sage green, soft natural lighting, editorial fashion style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXrN9ZSeh2YuhRhq_fCvvEniTiZZ1NDe1cBvzjUdm83KUfrFZGv-wsUuZc8DGvp1nnE_IwP3Ou1KJpXPbPmEEQnlDonWqWV8dZAXY1YkpjyvkKQttUbVVRi3gAdKhKhhuwvukiNbIH4Um6N5LcbGYvaK5Rd6MzcsDveHGqYlTqIIYtY708cbL02tMSUP8DD62WRSCEOwVQrpdDq9t03lSz36OmrlmYZlyszF7lTrxkJaPuKEw9NVrWorSjWmOknAlEHRTyj2EynDE"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-secondary-container/20">
+<img class="w-full h-full object-cover mix-blend-multiply" data-alt="Detailed texture shot of high-quality organic linen fabric, soft mint green hue, shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWo2l918cH0Jn3vVwscrnZtk39B-Lo87HRnFpn41LeO7S_0RV_qTw0lPcK_NljR-8L_FBzmAAFSkp8ZqnIbG0chAhf7e68Tg35VUz7-Qp7HP_ez-YJ5VJjcx2goJP59YE-LFwpZV3FeSZ6RVIlZoSR-TiDkh_CUsbZTPCxWBE_AZ-Ft1do0KhxQvjW0CIo4Z4OoZVCONf9dK6zrndEezZTSoyHrMa11ZWQaW8R_l46vdRjIPSaTJ9y849UrnLeU_eoDzZIYN-KtGA"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-tertiary-container/20">
+<img class="w-full h-full object-cover mix-blend-multiply" data-alt="Elegant wooden buttons on a garment, minimalist aesthetic, neutral earthy tones, soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ_rOsajjhnf2AAY7U7YSd7Qw3Yy8lzIjAEVl1S7Kv7v_tg--tDWknjmzHBQxUafRbEok9dh-u9dIdC81gDI0rDR3a7bYtoJt8GfAjKiChkAo8_GmPjHsl6i1eiDD30FkSaNyDvDN5TIf8vdNOl_tRyF2mIGw6NP3TnIeWIFjpz_uMaaP3vkrqZZDDnHwQLSmbb5UEQ4kFi-1-7GSu4o-7K6VQmfdgS3iprzr-uF47kRLDVCWuJ6d0IcGyvp9ALweGbyIFnwYD3JQ"/>
+</div>
+</div>
+<!-- Right Side: Product Details -->
+<div class="md:col-span-5 sticky top-32">
+<div class="flex flex-col gap-md">
+<!-- Title & Price Block -->
+<div>
+<div class="flex items-center gap-xs mb-sm">
+<span class="text-primary font-label-md uppercase tracking-widest">New Collection</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">Aria Linen Midi Dress</h2>
+<div class="flex items-center justify-between mt-sm">
+<span class="font-headline-md text-headline-md text-primary">$189.00</span>
+<div class="flex items-center gap-xs">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star">star</span>
+</div>
+<span class="font-label-md text-on-surface-variant">(48 Reviews)</span>
+</div>
+</div>
+</div>
+<!-- Divider -->
+<div class="h-px bg-outline-variant/30 w-full"></div>
+<!-- Description -->
+<div class="flex flex-col gap-sm">
+<h3 class="font-headline-sm text-headline-sm">Product Description</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            Crafted from 100% sustainably sourced European linen, the Aria Midi Dress features a relaxed silhouette that captures the essence of summer sophistication. Designed with a subtle cinch at the waist and artisanal wooden accents for a refined finish.
+                        </p>
+</div>
+<!-- Size Selector -->
+<div class="flex flex-col gap-sm">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-sm text-headline-sm">Select Size</h3>
+<button class="text-primary font-label-md border-b border-primary/20">Size Guide</button>
+</div>
+<div class="flex flex-wrap gap-sm">
+<button class="px-6 py-3 rounded-full border border-outline-variant text-on-surface-variant font-label-md hover:border-primary hover:text-primary transition-all">XS</button>
+<button class="px-6 py-3 rounded-full bg-primary-container text-on-primary-container font-label-md border border-primary-container transition-all">S</button>
+<button class="px-6 py-3 rounded-full border border-outline-variant text-on-surface-variant font-label-md hover:border-primary hover:text-primary transition-all">M</button>
+<button class="px-6 py-3 rounded-full border border-outline-variant text-on-surface-variant font-label-md hover:border-primary hover:text-primary transition-all">L</button>
+<button class="px-6 py-3 rounded-full border border-outline-variant text-on-surface-variant font-label-md hover:border-primary hover:text-primary transition-all">XL</button>
+</div>
+</div>
+<!-- Color Selector -->
+<div class="flex flex-col gap-sm">
+<h3 class="font-headline-sm text-headline-sm">Color: <span class="font-normal text-on-surface-variant">Sage Mist</span></h3>
+<div class="flex gap-sm">
+<button class="w-10 h-10 rounded-full bg-[#cbd5c0] ring-2 ring-primary ring-offset-2"></button>
+<button class="w-10 h-10 rounded-full bg-[#f4e1d2] hover:ring-2 hover:ring-outline-variant hover:ring-offset-2 transition-all"></button>
+<button class="w-10 h-10 rounded-full bg-[#ffffff] border border-outline-variant hover:ring-2 hover:ring-outline-variant hover:ring-offset-2 transition-all"></button>
+</div>
+</div>
+<!-- Add to Cart -->
+<div class="pt-sm flex flex-col gap-sm">
+<button class="w-full bg-primary text-on-primary font-headline-sm py-5 rounded-full flex items-center justify-center gap-sm active:scale-[0.98] transition-transform shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+                            Add to Cart
+                        </button>
+<button class="w-full py-4 font-label-md text-on-surface-variant flex items-center justify-center gap-sm hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            Add to Wishlist
+                        </button>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-2 gap-md p-md bg-surface-container-low rounded-lg mt-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping">local_shipping</span>
+<span class="font-label-md text-[10px]">Free Shipping</span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="recycling">recycling</span>
+<span class="font-label-md text-[10px]">Eco Friendly</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-xl border-t border-emerald-100/30 dark:border-emerald-900/30 shadow-[0_-4px_20px_rgba(189,217,193,0.1)] rounded-t-[2.5rem]">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-100 rounded-full px-5 py-2 active:transform scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

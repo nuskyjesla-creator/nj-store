@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#cdead1",
+                    "surface-bright": "#fcf9f8",
+                    "on-surface": "#1b1c1c",
+                    "background": "#fcf9f8",
+                    "outline-variant": "#c2c8c0",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#344c3a",
+                    "on-secondary-fixed-variant": "#5b403f",
+                    "on-secondary-container": "#7a5b5a",
+                    "error": "#ba1a1a",
+                    "tertiary": "#5e5f5b",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#082011",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-container": "#47604d",
+                    "inverse-primary": "#b2cdb6",
+                    "tertiary-fixed-dim": "#c7c7c2",
+                    "surface-container": "#f0eded",
+                    "on-secondary-fixed": "#2b1515",
+                    "surface-tint": "#4b6451",
+                    "secondary-container": "#ffd6d4",
+                    "outline": "#737972",
+                    "on-tertiary-fixed-variant": "#464744",
+                    "secondary": "#755756",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffdad8",
+                    "surface-variant": "#e4e2e1",
+                    "primary-container": "#bdd9c1",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#d3d2cd",
+                    "surface-dim": "#dcd9d9",
+                    "surface": "#fcf9f8",
+                    "secondary-fixed-dim": "#e4bdbb",
+                    "error-container": "#ffdad6",
+                    "primary": "#4b6451",
+                    "on-tertiary-container": "#595a57",
+                    "on-background": "#1b1c1c",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#424843",
+                    "inverse-on-surface": "#f3f0f0",
+                    "surface-container-high": "#eae7e7",
+                    "tertiary-fixed": "#e3e3de",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "primary-fixed-dim": "#b2cdb6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "lg": "48px",
+                    "xs": "4px",
+                    "margin": "24px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "gutter": "20px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["18px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f8;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface min-h-screen">
+<!-- TopAppBar Section -->
+<header class="sticky top-0 z-50 bg-stone-50/80 backdrop-blur-lg border-b border-emerald-100/20">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="p-2 text-emerald-800 hover:bg-emerald-50/50 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+<h1 class="text-xl font-bold tracking-tighter text-emerald-900 font-headline-md">NJ STORE</h1>
+<div class="flex items-center gap-4">
+<button class="p-2 text-emerald-800 hover:bg-emerald-50/50 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 md:py-16">
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Left Column: Shipping & Payment -->
+<div class="flex-1 space-y-12">
+<!-- Section Header -->
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Checkout</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Complete your purchase by providing your details below.</p>
+</div>
+<!-- Shipping Address Section -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping">local_shipping</span>
+<h3 class="font-headline-sm text-headline-sm">Shipping Address</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="col-span-full">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Full Name</label>
+<input class="w-full px-6 py-3 bg-surface-container-lowest border border-outline-variant rounded-full focus:ring-2 focus:ring-primary-container outline-none transition-all placeholder:text-outline" placeholder="Alexandra Sterling" type="text"/>
+</div>
+<div class="col-span-full">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Street Address</label>
+<input class="w-full px-6 py-3 bg-surface-container-lowest border border-outline-variant rounded-full focus:ring-2 focus:ring-primary-container outline-none transition-all placeholder:text-outline" placeholder="124 Boutique Lane" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">City</label>
+<input class="w-full px-6 py-3 bg-surface-container-lowest border border-outline-variant rounded-full focus:ring-2 focus:ring-primary-container outline-none transition-all placeholder:text-outline" placeholder="Paris" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Postal Code</label>
+<input class="w-full px-6 py-3 bg-surface-container-lowest border border-outline-variant rounded-full focus:ring-2 focus:ring-primary-container outline-none transition-all placeholder:text-outline" placeholder="75001" type="text"/>
+</div>
+</div>
+</section>
+<!-- Payment Method Section -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="payments">payments</span>
+<h3 class="font-headline-sm text-headline-sm">Payment Method</h3>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Credit Card Card -->
+<div class="p-6 bg-primary-container/30 border border-primary-container rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="credit_card">credit_card</span>
+</div>
+<div>
+<p class="font-headline-sm text-on-primary-container">Credit Card</p>
+<p class="font-body-md text-on-primary-container/70">**** **** **** 4242</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-primary flex items-center justify-center">
+<div class="w-3 h-3 bg-primary rounded-full"></div>
+</div>
+</div>
+<!-- PayPal Option (Ghost) -->
+<div class="p-6 bg-surface-container-lowest border border-outline-variant rounded-lg flex items-center justify-between opacity-60 hover:opacity-100 transition-opacity cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<div>
+<p class="font-headline-sm text-on-surface">PayPal</p>
+<p class="font-body-md text-on-surface-variant">Fast and secure</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary Sticky -->
+<aside class="w-full md:w-[400px]">
+<div class="sticky top-24 space-y-6">
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_4px_20px_rgba(189,217,193,0.1)] space-y-6">
+<h3 class="font-headline-sm text-headline-sm border-b border-surface-container pb-4">Order Summary</h3>
+<!-- Mini Cart Items -->
+<div class="space-y-4">
+<div class="flex gap-4">
+<div class="w-20 h-24 bg-primary-container/20 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Silk Blouse" class="w-full h-full object-cover" data-alt="Close-up of a premium minimalist silk blouse in soft cream color, elegant texture, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaZYB0rIAdXBR2_rG5IMwZgzDWhOA0GWuulAFf_6FPUXM9UiPM9823nLPlQvLUSfLRK0hDCz17lXvGsCc7GuZGhB7dlslkWh-khtqabtew5PTiep7ZsQ0QZpXmM-kncyaM98WNOxb_a9zd3j_E7C26JsE8AGUuuU6D_TXciraNBtejm3Pq_JbUdanGdKhVnxTfJ-RVsNv5ryo-sZiUXiWVgW0F378xDY-QpwAtDoIcezDStiZ0Cdkw9g_bKOKaUbH92lek92TX0YQ"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="font-label-md text-primary uppercase">Essentials</p>
+<p class="font-headline-sm text-sm">Silk Drape Blouse</p>
+<p class="font-body-md text-on-surface-variant">Size: M</p>
+<p class="font-headline-sm text-sm mt-1">$185.00</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-20 h-24 bg-secondary-container/20 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Cashmere Scarf" class="w-full h-full object-cover" data-alt="Handcrafted soft pink cashmere scarf neatly folded on a neutral surface, soft morning light, editorial feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAMAQ8h0hJSeK6Ef0oZ7UZiOJ3gLsFfOrMORHVnajn2XMxjBxuSll_cDEu1A7huwvPNtJbhrrsNUGNMK3xFcZHijzzVFeLGB2B7FjaKBU2jZ82nzlePq62DJUxtQ03Js91BQUYK8Dqa2PS7pHSXCdQYk6XZaTwniUqv8IjSvS8QKjPaTuYDz3bL5R7eNu07hkcuAHjZ8_ip0rnauW-C8Gf_52i8s3Y9Z4F7yke0UW9LRQaRP0UPbTVOGzYFRODP1cpVVnYpuph9fI"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="font-label-md text-secondary uppercase">Accessories</p>
+<p class="font-headline-sm text-sm">Fine Cashmere Scarf</p>
+<p class="font-body-md text-on-surface-variant">One Size</p>
+<p class="font-headline-sm text-sm mt-1">$95.00</p>
+</div>
+</div>
+</div>
+<hr class="border-surface-container"/>
+<!-- Totals -->
+<div class="space-y-3">
+<div class="flex justify-between font-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span>$280.00</span>
+</div>
+<div class="flex justify-between font-body-md text-on-surface-variant">
+<span>Shipping</span>
+<span class="text-primary">Free</span>
+</div>
+<div class="flex justify-between font-headline-md text-headline-sm pt-2">
+<span>Total</span>
+<span>$280.00</span>
+</div>
+</div>
+<!-- CTA -->
+<button class="w-full py-4 bg-primary text-on-primary rounded-full font-headline-sm hover:bg-primary/90 transition-all active:scale-95 shadow-lg shadow-primary/20">
+                            Place Order
+                        </button>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]" data-icon="lock">lock</span>
+<span class="font-label-md text-[10px] uppercase">Secure Encrypted Transaction</span>
+</div>
+</div>
+<!-- Trust Badges -->
+<div class="flex justify-between px-4">
+<div class="flex flex-col items-center gap-1 opacity-40">
+<span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+<span class="text-[10px] uppercase font-label-md">30 Day Returns</span>
+</div>
+<div class="flex flex-col items-center gap-1 opacity-40">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span class="text-[10px] uppercase font-label-md">Authentic</span>
+</div>
+<div class="flex flex-col items-center gap-1 opacity-40">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+<span class="text-[10px] uppercase font-label-md">24/7 Support</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- BottomNavBar Section (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-stone-50/90 backdrop-blur-xl border-t border-emerald-100/30 shadow-[0_-4px_20px_rgba(189,217,193,0.1)] rounded-t-[2.5rem] flex justify-around items-center px-4 py-3 pb-safe">
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 text-emerald-900 rounded-full px-5 py-2 transform scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_basket" style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 px-5 py-2 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+<!-- Map Context Decorator -->
+<div class="hidden lg:block fixed -bottom-24 -right-24 w-96 h-96 opacity-10 pointer-events-none">
+<img alt="Map Background" class="w-full h-full object-contain filter grayscale" data-location="Paris" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDDEMUipStMMtetcWXSFP7ReAvIeaEAVn9kZFjXL3J-thhK_XVVNLa0CTTSn9_lnXRE3YWDXsHWGTgns5kgUdF5DEKGSGiGlG_RbcNOlyH8WWzDt3hi-e93rN0ChpKY4W7olFm2V5Gh8hU_Ca3nNtqOxO7jhjCeHdx_S3UKtM-RbO6XiYxbzlxp0yxrJCLMgrGQayJxzLREpT4h_2n3s4lKFcSDRBHoZJk3EyQZvdpO91innlRD2Ph6eyQz6f8luA2eBiJ0nYzRlI"/>
+</div>
+</body></html>
